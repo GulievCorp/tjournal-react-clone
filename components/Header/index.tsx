@@ -8,6 +8,7 @@ import NotificationsIcon from '@mui/icons-material/Notifications';
 import Avatar from '@mui/material/Avatar';
 import MenuIcon from '@mui/icons-material/Menu';
 import Image from 'next/image';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 export const Header: React.FC = () => {
   return (
@@ -39,10 +40,11 @@ export const Header: React.FC = () => {
           <NotificationsIcon />
         </IconButton>
         <Avatar
-          className="ml-15"
+          className={styles.avatar}
           alt="Remy Sharp"
           src="https://sun9-26.userapi.com/impg/x5NfpyqCwc0klKjLLGCYcPM96hQnj09zzi0rng/lZ92WITuEvg.jpg?size=956x1276&quality=96&sign=96319835573fb6d2a7cfd4ccc63c6202&type=album"
         />
+        <ExpandMoreIcon />
       </div>
     </Paper>
   );
